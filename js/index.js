@@ -8,4 +8,4 @@ function cambiarColorFondo() {
     document.body.style.backgroundColor = color;
 }
 
-setInterval(cambiarColorFondo, 2000);
+setInterval(cambiarColorFondo, 3000);
