@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario-absurdo.css">
+    <title>Formulario de registro</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Formulario de registro</h1>
+        <p class="descripcion">
+            Complete los siguientes campos para determinar si usted es una persona confiable.
+        </p>
+        <form>
+            <div class="campo">
+                <label for="nombre">
+                    1. ¿Cuál es tu nombre de villano?
+                </label>
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ej. El señor Croqueta">
+            </div>
+            <div class="campo">
+                <label for="numero">
+                    2. Elige un número del 1 al 100 que te parezca sospechoso:
+                </label>
+                <input
+                    type="number"
+                    id="numero"
+                    min="1"
+                    max="100">
+            </div>
+            <div class="campo">
+                <label for="objeto">
+                    3. ¿Qué objeto de tu casa sobreviviría más tiempo en un apocalipsis?
+                </label>
+                <select id="objeto">
+                    <option value="">Selecciona una opción</option>
+                    <option>Una cuchara</option>
+                    <option>El microondas</option>
+                    <option>Una chancla</option>
+                    <option>El control de la televisión</option>
+                    <option>La silla que nadie usa</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="comida">
+                    4. ¿Qué comida defenderías aunque todos dijeran que está horrible?
+                </label>
+                <input
+                    type="text"
+                    id="comida"
+                    placeholder="No te vamos a juzgar... mucho">
+            </div>
+            <div class="campo">
+                <label for="opinion">
+                    5. Escribe una opinión completamente innecesaria:
+                </label>
+                <textarea
+                    id="opinion"
+                    rows="4"
+                    placeholder="Ej. Las cucharas grandes son superiores."
+                ></textarea>
+            </div>
+            <button type="submit">
+                Enviar respuesta
+            </button>
+        </form>
+    </div>
+</body>
+</html>
