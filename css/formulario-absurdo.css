@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.card {
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.descripcion {
+    margin: 0 0 30px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    background-color: #fff;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #555;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 12px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    background-color: #222;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
