@@ -81,3 +81,26 @@ botonCaos.addEventListener('click', activarCaos);
 
 cambiarFondo();
 setInterval(cambiarFondo, 2500);
+
+
+const imagen = document.getElementById("imagen");
+
+    imagen.addEventListener("click", () => {
+      // Posición aleatoria dentro de la pantalla
+      const maxX = window.innerWidth - imagen.offsetWidth;
+      const maxY = window.innerHeight - imagen.offsetHeight;
+
+      const x = Math.random() * maxX;
+      const y = Math.random() * maxY;
+
+      imagen.style.left = `${x}px`;
+      imagen.style.top = `${y}px`;
+
+      // Rotación aleatoria
+      const rotacion = Math.random() * 360;
+      imagen.style.transform = `rotate(${rotacion}deg)`;
+
+      // Color aleatorio para el fondo
+      const color = `hsl(${Math.random() * 360}, 70%, 20%)`;
+      document.body.style.background = color;
+    });
